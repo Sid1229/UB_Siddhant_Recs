@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(204 171 250);
+            text-align: center;
+
+        }
+        .name{
+            font-size: 80px;
+            /* float: left  ;    */
+            color: white;     
+        }
+        .signupbox{
+            background-color: rgba(225, 217, 236, 0.982);
+            width: 1000px;
+            height: 100px;
+            padding: 7px 4px 3px 3px;
+            margin: 8px 13px 8px 11px;
+            border-radius: 13px;
+            border-color: rgba(201, 174, 238, 0.982);
+            border: 3px solid rgba(201, 174, 238, 0.982);
+            font-size: 70px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            /* float: right; */
+        }
+        .showbutton{
+            font-size: 23px;
+            color:#009429;
+            
+            /* float: right; */
+        }
+
+    #loginbutton{
+        background-color: #006bf9fa;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            /* margin: 45px 152px; */
+            cursor: pointer;
+            border-radius: 12px;
+            /* float: rightA; */
+    }
+    .changesignup{
+            background-color: rgb(255 45 45 / 98%);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            /* margin: 45px 152px; */
+            cursor: pointer;
+            border-radius: 12px;
+            /* float: rightA; */
+    } 
+
+    .address{
+        background-color: rgba(225, 217, 236, 0.982);
+            width: 1400px;
+            height: 150px;
+            padding: 7px 4px 3px 3px;
+            margin: 8px 13px 8px 11px;
+            border-radius: 13px;
+            border-color: rgba(201, 174, 238, 0.982);
+            border: 3px solid rgba(201, 174, 238, 0.982);
+            font-size: 70px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="name">
+        <h1>
+            <u>
+                Seller Signup
+            </u>
+        </h1>
+        <form action="sellersignup.php" method="POST"><br>
+            <slang>Name:</slang>
+            <input type="text" class="signupbox" id="nameid" name="nameid" placeholder="Type anything to login" required><br><br>
+            <slang>Password:</slang>
+            <input type="password" class="signupbox" id="passwordbox" name="passkey" placeholder="Type password to signup " required><br><br> 
+            <slang>RePassword:</slang>
+            <input type="password" class="signupbox" id="repasswordbox" name="repasskey" placeholder="Again Type password to signup " required><br><br>
+            <slang>Contact Number:</slang>
+            <input type="text" class="signupbox" id="ph_number" name="ph_number" placeholder="Type your contact number" required><br><br>
+            <slang>Address from Package will be picked up:</slang><br>
+            <input type="textarea"   class="address" id="number" name="address" placeholder="Type your permanent address" required><br>    
+            <slang class="showbutton" ><b> Show password </b><input type="checkbox" onclick="password()" >
+            </slang> <br>
+            <input type="submit" id="loginbutton" >   
+        </form>
+        <a href="usersignup.html">
+            <button class="changesignup">
+                Click here for Seller Sign Up
+            </button>
+        </a>
+        
+    </div>
+    <script>
+
+function password() 
+{
+showpassword();
+showrepassword();
+}
+        function showpassword() {
+            var key = document.getElementById("passwordbox");
+            if (key.type === "password") {
+                key.type = "text";
+            } else {
+                key.type = "password";
+            }
+        }
+                
+        function showrepassword() {
+            var key = document.getElementById("repasswordbox");
+            if (key.type === "password") {
+                key.type = "text";
+            } else {
+                key.type = "password";
+            }
+        }
+                
+        </script>    
+        </body>
+        </html>
+               
+         

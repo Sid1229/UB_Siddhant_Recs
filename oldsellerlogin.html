@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+body {
+            background-color: rgb(204 171 250);
+        }
+
+        .heading1 ul {
+            color: aliceblue;
+            background-color: rgb(43, 67, 226);
+            overflow: auto;
+            font-size: 22px;
+            border-radius: 6px;
+        }
+        
+        .heading1 li {
+            padding: 0px 50px 0px 50px;
+            margin: 8px 5px 8px 5px;
+            float: left;
+            list-style: none;
+            cursor: pointer; 
+        }
+        .heading1 li:hover {
+            color: rgb(6, 251, 10);
+            font-weight: bolder;
+             }
+        .ontext {
+
+            background-color: red;
+            float: right;
+        }
+        
+        .box1 {
+            display: inline-block;
+            background-color: rgba(225, 217, 236, 0.982);
+            width: 853px;
+            height: 455px;
+            padding: 3px 3px 3px 3px;
+            margin: 3px 3px 3px 10px;
+            /* float: left; */
+            border-radius: 33px;
+            font-size: 20px;
+        }
+
+        .box2 {
+            background-color: rgb(234 230 239 / 98%);
+            display: inline-block;
+            width: 453px;
+            height: 455px;
+            padding: 3px 3px 3px 3px;
+            margin: 100px 500px 100px 500px;
+            border-radius: 33px;
+            font-size: 22px;
+        }
+        
+        #loginbox {
+            background-color: rgba(225, 217, 236, 0.982);
+            width: 420px;
+            height: 30px;
+            padding: 7px 4px 3px 3px;
+            margin: 8px 13px 8px 11px;
+            border-radius: 13px;
+            border-color: rgba(201, 174, 238, 0.982);
+            border: 3px solid rgba(201, 174, 238, 0.982);
+            font-size: 23px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        #passwordbox {
+            background-color: rgba(225, 217, 236, 0.982);
+            width: 420px;
+            height: 30px;
+            padding: 7px 4px 3px 3px;
+            margin: 8px 13px 8px 11px;
+            border-radius: 13px;
+            border-color: rgba(201, 174, 238, 0.982);
+            border: 3px solid rgba(201, 174, 238, 0.982);
+            font-size: 23px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        .name {
+            text-decoration: underline blue 3px;
+            margin: 0px 0px 0px 10px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .password {
+            text-decoration: underline blue 3px;
+            padding: 0px 0px 0px 10px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        #usersignup {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+            color: #00ff5a;
+            margin: 8px 5px 8px 532px;
+        }
+        #sellersignup {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+            color:#ff6f00;
+            /* margin: 8px 5px 8px 532px; */
+        }
+        
+        .loginbutton {
+            background-color: rgb(255 45 45 / 98%);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 45px 152px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .checkbox{
+            color: rgb(10, 99, 234);
+            float: right;
+            font-style: italic ;
+            font-weight: 1000;
+                }
+                
+         #myDIV {
+             background-color: lightblue;
+             display: inline-block;
+             width: 853px;
+             height: 455px;
+             border-radius: 33px;
+             font-size: 20px;
+         }
+   
+
+
+
+    </style>
+    <div class="box2">
+        <br>
+        <h2 class="name" >Seller Login: </h2>
+    <form action="oldsellerlogin.php" method="POST"><br>
+        <slang class="name">Name</slang><br>
+        <input type="text" class="loginbox" id="loginbox" name="nameid" placeholder="Type anything to login"><br><br>
+        <slang class="password">Password</slang><br>
+        <input type="password" class="passwordbox" id="passwordbox" name="passkey" placeholder="Type password to login "><br>
+        <slang class="checkbox">Show password<input type="checkbox" onclick="showpassword()"></slang> 
+        <input type="submit" class="loginbutton" >
+    </form>
+
+    <script>
+        function showpassword() {
+        var key = document.getElementById("passwordbox");
+        if (key.type === "password") {
+        key.type = "text";
+        } else {
+        key.type = "password";
+          }
+         }
+                
+                
+                
+                
+        function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+        </script>
+                
+</body>
+</html>
